@@ -1,0 +1,55 @@
+@import url(./container.css);
+@import url(./header.css);
+
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+
+    --font-base: 1rem;
+    --font-extra-small: 0.6875rem;
+    --font-small: 0.875rem;
+    --font-extra-medium: 1.875rem;
+    --font-medium: 1.125rem;
+    --font-large: 2.7rem;
+    --font-extra-large: 5rem;
+
+    font-size: 16px;
+  }
+
+  *, 
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  body {
+    color: var(--text-color);
+    background-color: var(--background);
+    background-image: url('../assets/assets/blur-mobile.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Manrope', sans-serif;
+    position: relative;
+  }
+
+  .hero-image img {
+    width: 100%;
+    display: block;
+  }
+
+  @media only screen and (min-width: 860px) {
+    body {
+        background-image: none;
+    }
+  }
+
+
